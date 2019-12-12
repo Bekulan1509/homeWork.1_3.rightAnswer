@@ -3,14 +3,15 @@ package com.example.homework1_3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int value1;
     int value2;
+    String op;
     TextView textView;
-    String some;
 
 
     @Override
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.append("1");
                 break;
             case R.id.two:
-                textView.append( "2");
+                textView.append("2");
                 break;
             case R.id.three:
                 textView.append("3");
@@ -55,30 +56,48 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.multiply:
+                value1 = Integer.valueOf(textView.getText().toString());
+                textView.setText(value1 + "*");
+                op="*";
+                break;
             case R.id.plus:
                 value1 = Integer.valueOf(textView.getText().toString());
-                textView.setText(value1+"+");
+                textView.setText(value1 + "+");
+                op="+";
                 break;
             case R.id.minus:
-                if (textView == null) {
-                    textView.setText(textView+"+");
-                } else {
-                    textView.setText(value1 + value2 + "");
-                }
+                value1 = Integer.valueOf(textView.getText().toString());
+                textView.setText(value1 + "-");
+                op="-";
                 break;
             case R.id.devite:
-                if (textView == null) {
-                    textView.setText("");
-                } else {
-                    textView.setText(value1 / value2 + "");
-                }
+                value1 = Integer.valueOf(textView.getText().toString());
+                textView.setText(value1 + "/");
+                op="/";
                 break;
             case R.id.equel:
-                String first = textView.getText().toString().replace(value1+"+", "");
+                String first = textView.getText().toString().replace(value1 + op+"", "");
                 value2 = Integer.valueOf(first);
-                textView.setText(value1+"+"+value2+"="+String.valueOf(value1+value2));
+                switch (op){
+                    case "+":
+                        textView.setText(value1 + "+" + value2 + "=" + (value1 + value2));
+                        break;
+                    case "-":
+                        textView.setText(value1 + "-" + value2 + "=" + (value1 - value2));
+                        break;
+                    case "*":
+                        textView.setText(value1 + "*" + value2 + "=" + (value1 * value2));
+                        break;
+                    case "/":
+                        textView.setText(value1 + "/" + value2 + "=" + (float)value1 / value2);
+                        break;
+                }
+//                if (textView.equals())
+//                }
                 break;
             case R.id.c:
                 textView.setText("");
@@ -86,9 +105,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onClick2(View v) {
-        switch (v.getId()) {
 
-        }
-    }
 }
