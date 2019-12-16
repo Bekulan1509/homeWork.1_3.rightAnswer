@@ -22,7 +22,7 @@
 
         <Button
             android:id="@+id/five"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/five"
@@ -31,7 +31,7 @@
 
         <Button
             android:id="@+id/four"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/four"
@@ -40,7 +40,7 @@
 
         <Button
             android:id="@+id/six"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/six"
@@ -49,7 +49,7 @@
 
         <Button
             android:id="@+id/devite"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/devite"
@@ -57,7 +57,7 @@
 
         <Button
             android:id="@+id/multiply"
-            android:layout_width="130dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/multiplay"
@@ -71,7 +71,7 @@
 
         <Button
             android:id="@+id/eight"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/eight"
@@ -80,7 +80,7 @@
 
         <Button
             android:id="@+id/seven"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/seven"
@@ -88,7 +88,7 @@
 
         <Button
             android:id="@+id/nine"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/nine"
@@ -97,7 +97,7 @@
 
         <Button
             android:id="@+id/plus"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/plus"
@@ -106,7 +106,7 @@
 
         <Button
             android:id="@+id/c"
-            android:layout_width="130dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
 
@@ -122,7 +122,7 @@
 
         <Button
             android:id="@+id/one"
-            android:layout_width="140dp"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/one"
@@ -131,7 +131,7 @@
 
         <Button
             android:id="@+id/equel"
-            android:layout_width="130dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/equel"
@@ -139,7 +139,7 @@
 
         <Button
             android:id="@+id/three"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/three"
@@ -148,7 +148,7 @@
 
         <Button
             android:id="@+id/two"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/two"
@@ -156,7 +156,7 @@
 
         <Button
             android:id="@+id/minus"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/minus"
@@ -171,14 +171,14 @@
 
         <Button
             android:id="@+id/com"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dot"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/zero"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClinic"
             android:text="@string/zero"
@@ -186,7 +186,7 @@
 
         <Button
             android:id="@+id/mod"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mod"
             android:textSize="20sp" />
