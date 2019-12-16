@@ -104,14 +104,6 @@
             android:textSize="20sp"
             />
 
-        <Button
-            android:id="@+id/equel"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:text="@string/equel"
-            android:textSize="20sp" />
-
 
     </LinearLayout>
 
@@ -174,6 +166,14 @@
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:text="@string/dot"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/equel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/equel"
             android:textSize="20sp" />
 
         <Button
