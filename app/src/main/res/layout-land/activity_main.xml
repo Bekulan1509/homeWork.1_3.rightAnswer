@@ -104,6 +104,15 @@
             android:textSize="20sp"
             />
 
+        <Button
+            android:id="@+id/c"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+
+            android:text="@string/delete"
+            android:textSize="20sp" />
+
 
     </LinearLayout>
 
@@ -119,6 +128,14 @@
             android:text="@string/one"
             android:textSize="20sp"
            />
+
+        <Button
+            android:id="@+id/equel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/equel"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/three"
@@ -146,15 +163,6 @@
             android:textSize="20sp"
            />
 
-        <Button
-            android:id="@+id/c"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-
-            android:text="@string/delete"
-            android:textSize="20sp" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -166,14 +174,6 @@
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:text="@string/dot"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/equel"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:text="@string/equel"
             android:textSize="20sp" />
 
         <Button
