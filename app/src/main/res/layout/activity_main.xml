@@ -58,13 +58,11 @@
         android:id="@+id/seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:onClick="onClinic"
         android:text="@string/seven"
         app:layout_constraintBottom_toBottomOf="@id/eight"
         app:layout_constraintBottom_toTopOf="@id/four"
         app:layout_constraintRight_toLeftOf="@id/eight"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/eight"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -129,12 +127,10 @@
         android:id="@+id/minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-android:onClick="onClick"
+        android:onClick="onClick"
         android:text="@string/minus"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/nine"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/nine"
         app:layout_constraintTop_toTopOf="@id/nine"
         app:layout_constraintVertical_bias="0.0" />
@@ -143,27 +139,22 @@ android:onClick="onClick"
         android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:onClick="onClick"
         android:text="@string/plus"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/six"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/six"
         app:layout_constraintTop_toTopOf="@id/six"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/equel"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/round_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="@string/equel"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/three"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/three"
         app:layout_constraintTop_toTopOf="@id/three"
         app:layout_constraintVertical_bias="0.0" />
@@ -172,7 +163,7 @@ android:onClick="onClick"
         android:id="@+id/devite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-android:onClick="onClick"
+        android:onClick="onClick"
         android:text="@string/devite"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/eight"
@@ -196,14 +187,12 @@ android:onClick="onClick"
         android:id="@+id/c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:onClick="onClick"
 
         android:text="@string/delete"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/devite"
         app:layout_constraintRight_toLeftOf="@id/devite"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/devite"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -218,7 +207,7 @@ android:onClick="onClick"
         app:layout_constraintTop_toTopOf="@id/zero" />
 
     <Button
-
+        android:id="@+id/mod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mod"
@@ -231,10 +220,14 @@ android:onClick="onClick"
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
         android:hint="result"
         android:textSize="45sp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/nine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/devite"
+        android:freezesText="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
