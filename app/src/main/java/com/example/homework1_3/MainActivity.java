@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt("value1",value1);
         outState.putInt("value2",value2);
-        //Log.d("TAG", " value2 ");
         outState.putString("op",op);
     }
 

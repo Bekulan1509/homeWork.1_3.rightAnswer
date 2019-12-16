@@ -141,7 +141,7 @@
             android:id="@+id/two"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
+            android:onClick="onClinic"
             android:text="@string/two"
             android:textSize="20sp" />
 
